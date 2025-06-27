@@ -1,9 +1,9 @@
-/* Error: expected ":".
+/* Error: expected ";".
  *   ,
- * 1 | $margin-top
- *   |            ^
+ * 1 | $margin-top:margin-top:
+ *   |                       ^
  *   '
- *   hotel.scss 1:12  root stylesheet */
+ *   hotel.scss 1:23  root stylesheet */
 
 body::before {
   font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
@@ -13,5 +13,5 @@ body::before {
   padding: 1em;
   margin-bottom: 1em;
   border-bottom: 2px solid black;
-  content: 'Error: expected ":".\a   \2577 \a 1 \2502  $margin-top\d\a   \2502             ^\a   \2575 \a   hotel.scss 1:12  root stylesheet';
+  content: 'Error: expected ";".\a   \2577 \a 1 \2502  $margin-top:margin-top:\d\a   \2502                        ^\a   \2575 \a   hotel.scss 1:23  root stylesheet';
 }
